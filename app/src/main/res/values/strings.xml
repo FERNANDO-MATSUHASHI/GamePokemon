@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GamePokemon</string>
+    <string name="instructions">Decifre a palavra embaralhada</string>
+    <string name="skip">Pular</string>
+    <string name="submit">Enviar</string>
+    <string name="score">Placar: %d</string>
+    <string name="word_count">%d/%d</string>
+    <string name="enter_your_word">Digite sua palavra:</string>
+    <string name="congratulation">Parabéns!</string>
+    <string name="you_scored">Seu placar: %d</string>
+    <string name="exit">Sair</string>
+    <string name="wrong_guess">Errrooouuu!</string>
+    <string name="it_wasn_t_this_time">Não foi dessa vez!</string>
+    <string name="next">Próximo</string>
+    <string name="information">Informações</string>
+    <string name="which_type_of_pokemon_is_this">Que tipo de pokémon é esse?</string>
+    <string name="got_it_right">Acertou!</string>
+</resources>
