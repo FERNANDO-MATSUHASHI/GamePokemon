@@ -3,6 +3,7 @@ package com.example.gamepokemon.ui
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.ViewModel
 import com.example.gamepokemon.dados.NUMERO_DE_PALAVRAS
 import com.example.gamepokemon.dados.PONTO_ACERTO
@@ -73,7 +74,7 @@ class JogoViewModel: ViewModel() {
                 currentState.copy(
                     informacao = true,
                     botaoInfo = true,
-                    acertou = true
+                    acertou = true,
                 )
             }
 
@@ -84,7 +85,7 @@ class JogoViewModel: ViewModel() {
                 currentState.copy(
                     errou = true,
                     informacao = true,
-                    botaoInfo = true
+                    botaoInfo = true,
                 )
             }
         }

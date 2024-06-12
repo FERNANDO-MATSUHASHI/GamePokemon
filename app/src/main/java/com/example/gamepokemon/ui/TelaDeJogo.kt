@@ -84,7 +84,7 @@ fun TelaDeJogo(
 
     // Título do jogo
     Text(
-        text = "Game Pokemon",
+        text = "Quiz Pokemon",
         fontSize = 35.sp,
         style = TextStyle(
             fontSize = 24.sp,
@@ -300,7 +300,7 @@ fun JogoPrincipal(
 
 
             // Dentro do composable onde você está construindo a lista de botões
-            listOption.forEach  { option ->
+            listOption.forEach { option ->
                 Button(
                     onClick = {
 
@@ -322,14 +322,16 @@ fun JogoPrincipal(
                         .fillMaxWidth()
                         .padding(vertical = 4.dp),
                     colors = ButtonDefaults.buttonColors(
-                        containerColor = if (selectedOption == option) _estadoAtual.value.selectedOptionBackgroundColor else if (option == correctOption) _estadoAtual.value.correctOptionBackgroundColor else _estadoAtual.value.originalOptionBackgroundColor,
+                        containerColor = if (selectedOption == option) _estadoAtual.value.selectedOptionBackgroundColor
+                                        else if (option == correctOption) _estadoAtual.value.correctOptionBackgroundColor
+                                        else _estadoAtual.value.originalOptionBackgroundColor,
                         contentColor = if (selectedOption == option) Color.White else Color.Black
                     )
                 ) {
-                    Text(text = option)
+                    Text(text = option )
                 }
             }
-
+            Text(text = "Botão clicado: ${selectedOption}")
         }
     }
 }
